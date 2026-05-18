@@ -1,0 +1,159 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LanguageToggle from '../components/LanguageToggle.astro';
+---
+
+<Layout title="Payaso Chapulín Houston — ¡The Party Starts HERE! 🎉">
+  <LanguageToggle currentLang="en" />
+
+  <!-- HERO SECTION -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-4 py-12 bg-gradient-to-b from-purple-bling via-black to-fiesta-red relative">
+    <!-- Sparkle decorations -->
+    <div class="absolute top-10 left-10 text-gold text-4xl sparkle">✨</div>
+    <div class="absolute top-20 right-20 text-hot-pink text-3xl sparkle" style="animation-delay: 0.5s">⭐</div>
+    <div class="absolute bottom-20 left-20 text-lime-green text-5xl sparkle" style="animation-delay: 1s">🎊</div>
+    <div class="absolute bottom-10 right-10 text-gold text-4xl sparkle" style="animation-delay: 1.5s">✨</div>
+
+    <!-- Logo -->
+    <div class="float mb-6">
+      <img 
+        src="/images/logo.png" 
+        alt="Payaso Chapulín Houston Logo" 
+        class="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-gold shadow-[0_0_30px_rgba(255,215,0,0.5)] object-cover"
+      />
+    </div>
+
+    <!-- Title -->
+    <h1 class="font-[family-name:var(--font-family-circus)] text-5xl md:text-7xl lg:text-8xl text-gold drop-shadow-[0_0_10px_rgba(255,215,0,0.8)] mb-4">
+      PAYASO CHAPULÍN
+    </h1>
+    <p class="font-[family-name:var(--font-family-circus)] text-3xl md:text-4xl text-hot-pink drop-shadow-[0_0_8px_rgba(255,20,147,0.6)]">
+      HOUSTON
+    </p>
+
+    <!-- Tagline -->
+    <p class="font-[family-name:var(--font-family-body)] text-xl md:text-2xl text-white mt-6 max-w-2xl leading-relaxed">
+      🎪 The <span class="text-gold font-bold">FLASHIEST</span> clown in Houston! 
+      Birthday parties, adult shows & entertainment that'll make your event 
+      <span class="text-hot-pink font-bold">UNFORGETTABLE!</span> 🎪
+    </p>
+
+    <!-- CTA Phone Number -->
+    <div class="mt-10 shimmer rounded-2xl p-1">
+      <a 
+        href="tel:+12816501950" 
+        class="block bg-gradient-to-r from-fiesta-red via-hot-pink to-purple-bling text-white font-[family-name:var(--font-family-body)] font-bold text-2xl md:text-3xl px-8 py-5 rounded-2xl hover:scale-105 transition-transform shadow-[0_0_20px_rgba(255,20,147,0.5)]"
+      >
+        📞 CALL NOW: (281) 650-1950
+      </a>
+    </div>
+    <p class="text-gold font-[family-name:var(--font-family-body)] mt-3 text-lg">
+      ¡Llámame! / Call me!
+    </p>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="py-16 px-4 bg-gradient-to-b from-fiesta-red via-black to-royal-blue">
+    <h2 class="font-[family-name:var(--font-family-circus)] text-4xl md:text-6xl text-center text-gold mb-12 drop-shadow-[0_0_10px_rgba(255,215,0,0.6)]">
+      🎉 What I Do 🎉
+    </h2>
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+      <!-- Birthday Parties -->
+      <div class="bg-gradient-to-br from-purple-bling/30 to-hot-pink/20 border-2 border-gold rounded-3xl p-8 hover:scale-105 transition-transform shadow-[0_0_15px_rgba(255,215,0,0.3)]">
+        <div class="text-6xl mb-4">🎂</div>
+        <h3 class="font-[family-name:var(--font-family-circus)] text-3xl text-hot-pink mb-3">Birthday Parties</h3>
+        <p class="font-[family-name:var(--font-family-body)] text-lg text-white/90 leading-relaxed">
+          Make your kid's birthday the <span class="text-gold font-bold">BEST DAY EVER!</span> 
+          Games, magic, balloons, face painting, music, dancing — 
+          a full show that keeps the kids screaming with joy! 🎈🎁
+        </p>
+      </div>
+
+      <!-- Adult Shows -->
+      <div class="bg-gradient-to-br from-royal-blue/30 to-lime-green/20 border-2 border-gold rounded-3xl p-8 hover:scale-105 transition-transform shadow-[0_0_15px_rgba(255,215,0,0.3)]">
+        <div class="text-6xl mb-4">🎭</div>
+        <h3 class="font-[family-name:var(--font-family-circus)] text-3xl text-lime-green mb-3">Adult Shows</h3>
+        <p class="font-[family-name:var(--font-family-body)] text-lg text-white/90 leading-relaxed">
+          Not just for kids! Comedy shows for adults that'll have everyone 
+          <span class="text-gold font-bold">CRYING WITH LAUGHTER!</span> 
+          Corporate events, quinceañeras, weddings — you name it! 🎤😂
+        </p>
+      </div>
+
+      <!-- Family Events -->
+      <div class="bg-gradient-to-br from-tacky-orange/30 to-gold/20 border-2 border-gold rounded-3xl p-8 hover:scale-105 transition-transform shadow-[0_0_15px_rgba(255,215,0,0.3)]">
+        <div class="text-6xl mb-4">👨‍👩‍👧‍👦</div>
+        <h3 class="font-[family-name:var(--font-family-circus)] text-3xl text-tacky-orange mb-3">Family Events</h3>
+        <p class="font-[family-name:var(--font-family-body)] text-lg text-white/90 leading-relaxed">
+          Baby showers, baptisms, family reunions, holiday parties — 
+          ANY event where you need <span class="text-gold font-bold">PURE FUN & ENTERTAINMENT!</span> 🎊🥳
+        </p>
+      </div>
+
+      <!-- The Legacy -->
+      <div class="bg-gradient-to-br from-gold/30 to-fiesta-red/20 border-2 border-gold rounded-3xl p-8 hover:scale-105 transition-transform shadow-[0_0_15px_rgba(255,215,0,0.3)]">
+        <div class="text-6xl mb-4">🌟</div>
+        <h3 class="font-[family-name:var(--font-family-circus)] text-3xl text-gold mb-3">Entertainment Legacy</h3>
+        <p class="font-[family-name:var(--font-family-body)] text-lg text-white/90 leading-relaxed">
+          Son of <span class="text-gold font-bold">Baku Miller</span> — legendary ventriloquist! 
+          Entertainment runs in the BLOOD. A family tradition of 
+          making people <span class="text-hot-pink font-bold">HAPPY!</span> 🎪✨
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="py-16 px-4 bg-gradient-to-b from-royal-blue via-black to-purple-bling">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="font-[family-name:var(--font-family-circus)] text-4xl md:text-6xl text-gold mb-8 drop-shadow-[0_0_10px_rgba(255,215,0,0.6)]">
+        ✨ About Me ✨
+      </h2>
+      <div class="bg-black/50 border-2 border-hot-pink rounded-3xl p-8 md:p-12 shadow-[0_0_20px_rgba(255,20,147,0.3)]">
+        <p class="font-[family-name:var(--font-family-body)] text-xl md:text-2xl text-white/90 leading-relaxed mb-6">
+          I'm not your average clown! 🤡 I'm <span class="text-gold font-bold">PAYASO CHAPULÍN</span> — 
+          the most <span class="text-hot-pink font-bold">FLASHY</span>, 
+          <span class="text-lime-green font-bold">FUN</span>, and 
+          <span class="text-tacky-orange font-bold">UNFORGETTABLE</span> entertainer in Houston!
+        </p>
+        <p class="font-[family-name:var(--font-family-body)] text-lg text-white/80 leading-relaxed mb-6">
+          With my shiny sequined suits, flashy shoes, and big personality — 
+          I bring the PARTY wherever I go! Born into a family of entertainers 
+          (my father is Baku Miller, a famous ventriloquist), performing is in my DNA! 🧬🎭
+        </p>
+        <p class="font-[family-name:var(--font-family-body)] text-lg text-white/80 leading-relaxed">
+          Based in <span class="text-royal-blue font-bold">Houston, Texas</span> 🤠 — 
+          serving the entire Greater Houston area. 
+          Bilingual shows in English & Spanish! 🇺🇸🇲🇽
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION FOOTER -->
+  <section class="py-16 px-4 bg-gradient-to-b from-purple-bling to-black text-center">
+    <h2 class="font-[family-name:var(--font-family-circus)] text-4xl md:text-5xl text-gold mb-6">
+      🎪 Ready to PARTY? 🎪
+    </h2>
+    <p class="font-[family-name:var(--font-family-body)] text-xl text-white/80 mb-8 max-w-xl mx-auto">
+      Don't wait! The best dates book fast. Call NOW and let's make your event LEGENDARY!
+    </p>
+    
+    <a 
+      href="tel:+12816501950" 
+      class="inline-block bg-gradient-to-r from-gold via-tacky-orange to-fiesta-red text-black font-[family-name:var(--font-family-body)] font-bold text-2xl md:text-3xl px-10 py-5 rounded-full hover:scale-110 transition-transform shadow-[0_0_25px_rgba(255,215,0,0.6)] border-2 border-white"
+    >
+      📞 (281) 650-1950
+    </a>
+
+    <div class="mt-12 flex justify-center gap-6">
+      <a href="https://www.facebook.com/payasochapulinhouston/" target="_blank" class="text-4xl hover:scale-125 transition-transform">📘</a>
+      <a href="https://www.youtube.com/channel/UCxTFIGHhO1a-p8BSSqpRn7Q" target="_blank" class="text-4xl hover:scale-125 transition-transform">📺</a>
+    </div>
+
+    <p class="font-[family-name:var(--font-family-body)] text-white/50 mt-12 text-sm">
+      © 2025 Payaso Chapulín Houston. All rights reserved. | Houston, TX 🤠
+    </p>
+  </section>
+</Layout>

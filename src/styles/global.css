@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #FFD700;
+  --color-hot-pink: #FF1493;
+  --color-royal-blue: #4169E1;
+  --color-fiesta-red: #FF2400;
+  --color-lime-green: #32CD32;
+  --color-purple-bling: #9B30FF;
+  --color-tacky-orange: #FF6600;
+  --font-family-circus: 'Boogaloo', cursive;
+  --font-family-body: 'Fredoka', sans-serif;
+}
+
+/* Sparkle animation */
+@keyframes sparkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.2); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+.sparkle { animation: sparkle 1.5s ease-in-out infinite; }
+.float { animation: float 3s ease-in-out infinite; }
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,215,0,0.4), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Confetti pieces */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  top: -10px;
+  animation: confetti-fall linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}

@@ -1,0 +1,16 @@
+---
+interface Props {
+  currentLang: 'en' | 'es';
+}
+const { currentLang } = Astro.props;
+const otherLang = currentLang === 'en' ? 'es' : 'en';
+const otherLabel = currentLang === 'en' ? '🇲🇽 Español' : '🇺🇸 English';
+const otherHref = currentLang === 'en' ? '/es' : '/';
+---
+
+<a
+  href={otherHref}
+  class="fixed top-4 right-4 z-50 bg-gradient-to-r from-hot-pink to-purple-bling text-white font-[family-name:var(--font-family-body)] font-bold px-4 py-2 rounded-full shadow-lg hover:scale-110 transition-transform border-2 border-gold"
+>
+  {otherLabel}
+</a>
