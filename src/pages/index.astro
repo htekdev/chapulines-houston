@@ -7,49 +7,56 @@ import LanguageToggle from '../components/LanguageToggle.astro';
   <LanguageToggle currentLang="en" />
 
   <!-- HERO SECTION -->
-  <section class="min-h-screen flex flex-col items-center justify-center text-center px-4 py-12 bg-gradient-to-b from-purple-bling via-black to-fiesta-red relative">
-    <!-- Sparkle decorations -->
-    <div class="absolute top-10 left-10 text-gold text-4xl sparkle">✨</div>
-    <div class="absolute top-20 right-20 text-hot-pink text-3xl sparkle" style="animation-delay: 0.5s">⭐</div>
-    <div class="absolute bottom-20 left-20 text-lime-green text-5xl sparkle" style="animation-delay: 1s">🎊</div>
-    <div class="absolute bottom-10 right-10 text-gold text-4xl sparkle" style="animation-delay: 1.5s">✨</div>
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-4 py-12 relative overflow-hidden">
+    <!-- Hero background video -->
+    <video
+      class="absolute inset-0 w-full h-full object-cover object-[50%_30%] md:object-center z-0"
+      autoplay
+      loop
+      muted
+      playsinline
+    >
+      <source src="/videos/chapulin-hero.mp4" type="video/mp4" />
+    </video>
+    <!-- Dark overlay for text readability -->
+    <div class="absolute inset-0 bg-black/55 z-[1]"></div>
 
-    <!-- Logo -->
-    <div class="float mb-6">
-      <img 
-        src="/images/logo.png" 
-        alt="Payaso Chapulín Houston Logo" 
-        class="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-gold shadow-[0_0_30px_rgba(255,215,0,0.5)] object-cover"
-      />
+    <!-- All hero content sits above the overlay -->
+    <div class="relative z-[2] w-full flex flex-col items-center">
+      <!-- Sparkle decorations -->
+      <div class="absolute top-10 left-10 text-gold text-4xl sparkle">✨</div>
+      <div class="absolute top-20 right-20 text-hot-pink text-3xl sparkle" style="animation-delay: 0.5s">⭐</div>
+      <div class="absolute bottom-20 left-20 text-lime-green text-5xl sparkle" style="animation-delay: 1s">🎊</div>
+      <div class="absolute bottom-10 right-10 text-gold text-4xl sparkle" style="animation-delay: 1.5s">✨</div>
+
+      <!-- Title -->
+      <h1 class="font-[family-name:var(--font-family-circus)] text-5xl md:text-7xl lg:text-8xl text-gold drop-shadow-[0_0_10px_rgba(255,215,0,0.8)] mb-4">
+        PAYASO CHAPULÍN
+      </h1>
+      <p class="font-[family-name:var(--font-family-circus)] text-3xl md:text-4xl text-hot-pink drop-shadow-[0_0_8px_rgba(255,20,147,0.6)]">
+        HOUSTON
+      </p>
+
+      <!-- Tagline -->
+      <p class="font-[family-name:var(--font-family-body)] text-xl md:text-2xl text-white mt-6 max-w-2xl leading-relaxed">
+        🎪 The <span class="text-gold font-bold">FLASHIEST</span> clown in Houston! 
+        Birthday parties, adult shows & entertainment that'll make your event 
+        <span class="text-hot-pink font-bold">UNFORGETTABLE!</span> 🎪
+      </p>
+
+      <!-- CTA Phone Number -->
+      <div class="mt-10 shimmer rounded-2xl p-1">
+        <a 
+          href="tel:+12816501950" 
+          class="block bg-gradient-to-r from-fiesta-red via-hot-pink to-purple-bling text-white font-[family-name:var(--font-family-body)] font-bold text-2xl md:text-3xl px-8 py-5 rounded-2xl hover:scale-105 transition-transform shadow-[0_0_20px_rgba(255,20,147,0.5)]"
+        >
+          📞 CALL NOW: (281) 650-1950
+        </a>
+      </div>
+      <p class="text-gold font-[family-name:var(--font-family-body)] mt-3 text-lg">
+        ¡Llámame! / Call me!
+      </p>
     </div>
-
-    <!-- Title -->
-    <h1 class="font-[family-name:var(--font-family-circus)] text-5xl md:text-7xl lg:text-8xl text-gold drop-shadow-[0_0_10px_rgba(255,215,0,0.8)] mb-4">
-      PAYASO CHAPULÍN
-    </h1>
-    <p class="font-[family-name:var(--font-family-circus)] text-3xl md:text-4xl text-hot-pink drop-shadow-[0_0_8px_rgba(255,20,147,0.6)]">
-      HOUSTON
-    </p>
-
-    <!-- Tagline -->
-    <p class="font-[family-name:var(--font-family-body)] text-xl md:text-2xl text-white mt-6 max-w-2xl leading-relaxed">
-      🎪 The <span class="text-gold font-bold">FLASHIEST</span> clown in Houston! 
-      Birthday parties, adult shows & entertainment that'll make your event 
-      <span class="text-hot-pink font-bold">UNFORGETTABLE!</span> 🎪
-    </p>
-
-    <!-- CTA Phone Number -->
-    <div class="mt-10 shimmer rounded-2xl p-1">
-      <a 
-        href="tel:+12816501950" 
-        class="block bg-gradient-to-r from-fiesta-red via-hot-pink to-purple-bling text-white font-[family-name:var(--font-family-body)] font-bold text-2xl md:text-3xl px-8 py-5 rounded-2xl hover:scale-105 transition-transform shadow-[0_0_20px_rgba(255,20,147,0.5)]"
-      >
-        📞 CALL NOW: (281) 650-1950
-      </a>
-    </div>
-    <p class="text-gold font-[family-name:var(--font-family-body)] mt-3 text-lg">
-      ¡Llámame! / Call me!
-    </p>
   </section>
 
   <!-- SERVICES SECTION -->
